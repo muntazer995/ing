@@ -131,7 +131,7 @@ async def generate_cover(thumbnail, title, userid, ctitle):
 
 
     
-@Client.on_message(command(["تشغيل", f"ش", f"شغل", f"p", f"play"]) & other_filters)
+@Client.on_message(command(["تشغيل" ."شغل", "/play"]) & other_filters)
 async def play(c: Client, m: Message):
     await m.delete()
     replied = m.reply_to_message
